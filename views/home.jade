@@ -1,0 +1,121 @@
+extend layout
+
+block content
+  .row
+    .large-12.columns
+      h1 Welcome to Foundation
+    .row
+      .large-12.columns
+        .panel
+          h3 We&rsquor;re stoked you want to try Foundation&excl; 
+          p
+            | To get going&comma; this file &lpar;index&period;html&rpar; includes some basic styles you can modify&comma; play around with&comma; or totally destroy to get going&period;
+          p Once you&apos;ve exhausted the fun in this document&comma; you should check out&colon;
+          .row
+            .large-4.medium-4.columns
+              p
+                a(href='http://foundation.zurb.com/docs') Foundation Documentation
+                br
+                | Everything you need to know about using the framework&period;
+            .large-4.medium-4.columns
+              p
+                a(href='http://github.com/zurb/foundation') Foundation on Github
+                br
+                | Latest code&comma; issue reports&comma; feature requests and more&period;
+            .large-4.medium-4.columns
+              p
+                a(href='http://twitter.com/foundationzurb') &commat;foundationzurb
+                br
+                | Ping us on Twitter if you have questions&period; If you build something with this we&apos;d love to see it &lpar;and send you a totally boss sticker&rpar;&period;
+    .row
+      .large-8.medium-8.columns
+        h5 Here&rsquor;s your basic grid&colon;
+        // Grid Example
+        .row
+          .large-12.columns
+            .callout.panel
+              p
+                strong This is a twelve column section in a row&period;
+                | Each of these includes a div&period;panel element so you can see where the columns are - it&apos;s not required at all for the grid&period;
+        .row
+          .large-6.medium-6.columns
+            .callout.panel
+              p Six columns
+          .large-6.medium-6.columns
+            .callout.panel
+              p Six columns
+        .row
+          .large-4.medium-4.small-4.columns
+            .callout.panel
+              p Four columns
+          .large-4.medium-4.small-4.columns
+            .callout.panel
+              p Four columns
+          .large-4.medium-4.small-4.columns
+            .callout.panel
+              p Four columns
+        hr
+        h5 We bet you&rsquor;ll need a form somewhere&colon;
+        form
+          .row
+            .large-12.columns
+              label Input Label
+                input(type='text', placeholder='large-12.columns')
+          .row
+            .large-4.medium-4.columns
+              label Input Label
+              input(type='text', placeholder='large-4.columns')
+            .large-4.medium-4.columns
+              label Input Label
+              input(type='text', placeholder='large-4.columns')
+            .large-4.medium-4.columns
+              .row.collapse
+                label Input Label
+                .small-9.columns
+                  input(type='text', placeholder='small-9.columns')
+                .small-3.columns
+                  span.postfix &period;com
+          .row
+            .large-12.columns
+              label Select Box
+                select
+                  option(value='husker') Husker
+                  option(value='starbuck') Starbuck
+                  option(value='hotdog') Hot Dog
+                  option(value='apollo') Apollo
+          .row
+            .large-6.medium-6.columns
+              label Choose Your Favorite
+              input#pokemonRed(type='radio', name='pokemon', value='Red')
+              label(for='pokemonRed') Radio 1
+              input#pokemonBlue(type='radio', name='pokemon', value='Blue')
+              label(for='pokemonBlue') Radio 2
+            .large-6.medium-6.columns
+              label Check these out
+              input#checkbox1(type='checkbox')
+              label(for='checkbox1') Checkbox 1
+              input#checkbox2(type='checkbox')
+              label(for='checkbox2') Checkbox 2
+          .row
+            .large-12.columns
+              label Textarea Label
+                textarea(placeholder='small-12.columns')
+      .large-4.medium-4.columns
+        h5 Try one of these buttons&colon;
+        p
+          a.small.button(href='#') Simple Button
+          br
+          a.small.radius.button(href='#') Radius Button
+          br
+          a.small.round.button(href='#') Round Button
+          br
+          a.medium.success.button(href='#') Success Btn
+          br
+          a.medium.alert.button(href='#') Alert Btn
+          br
+          a.medium.secondary.button(href='#') Secondary Btn
+        .panel
+          h5 So many components&comma; girl&excl;
+          p
+            | A whole kitchen sink of goodies comes with Foundation&period; Checkout the docs to see them all&comma; along with details on making them your own&period;
+          a.small.button(href='http://foundation.zurb.com/docs/') Go to Foundation Docs

@@ -1,0 +1,1 @@
+require('child_process').spawn('compass', ['watch'], { cwd: "public/", stdio: 'inherit' });
