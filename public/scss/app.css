@@ -1,0 +1,59 @@
+/*
+Error: File to import not found or unreadable: foundation.
+       Load paths:
+         
+        on line 2 of app.scss
+
+1: @import "settings";
+2: @import "foundation";
+3: 
+4: // Or selectively include components
+5: // @import
+6: //   "foundation/components/accordion",
+7: //   "foundation/components/alert-boxes",
+
+Backtrace:
+app.scss:2
+/usr/local/lib/ruby/gems/2.1.0/gems/sass-3.4.4/lib/sass/tree/import_node.rb:66:in `rescue in import'
+/usr/local/lib/ruby/gems/2.1.0/gems/sass-3.4.4/lib/sass/tree/import_node.rb:45:in `import'
+/usr/local/lib/ruby/gems/2.1.0/gems/sass-3.4.4/lib/sass/tree/import_node.rb:28:in `imported_file'
+/usr/local/lib/ruby/gems/2.1.0/gems/sass-3.4.4/lib/sass/tree/import_node.rb:37:in `css_import?'
+/usr/local/lib/ruby/gems/2.1.0/gems/sass-3.4.4/lib/sass/tree/visitors/perform.rb:301:in `visit_import'
+/usr/local/lib/ruby/gems/2.1.0/gems/sass-3.4.4/lib/sass/tree/visitors/base.rb:36:in `visit'
+/usr/local/lib/ruby/gems/2.1.0/gems/sass-3.4.4/lib/sass/tree/visitors/perform.rb:158:in `block in visit'
+/usr/local/lib/ruby/gems/2.1.0/gems/sass-3.4.4/lib/sass/stack.rb:79:in `block in with_base'
+/usr/local/lib/ruby/gems/2.1.0/gems/sass-3.4.4/lib/sass/stack.rb:115:in `with_frame'
+/usr/local/lib/ruby/gems/2.1.0/gems/sass-3.4.4/lib/sass/stack.rb:79:in `with_base'
+/usr/local/lib/ruby/gems/2.1.0/gems/sass-3.4.4/lib/sass/tree/visitors/perform.rb:158:in `visit'
+/usr/local/lib/ruby/gems/2.1.0/gems/sass-3.4.4/lib/sass/tree/visitors/base.rb:52:in `block in visit_children'
+/usr/local/lib/ruby/gems/2.1.0/gems/sass-3.4.4/lib/sass/tree/visitors/base.rb:52:in `map'
+/usr/local/lib/ruby/gems/2.1.0/gems/sass-3.4.4/lib/sass/tree/visitors/base.rb:52:in `visit_children'
+/usr/local/lib/ruby/gems/2.1.0/gems/sass-3.4.4/lib/sass/tree/visitors/perform.rb:167:in `block in visit_children'
+/usr/local/lib/ruby/gems/2.1.0/gems/sass-3.4.4/lib/sass/tree/visitors/perform.rb:179:in `with_environment'
+/usr/local/lib/ruby/gems/2.1.0/gems/sass-3.4.4/lib/sass/tree/visitors/perform.rb:166:in `visit_children'
+/usr/local/lib/ruby/gems/2.1.0/gems/sass-3.4.4/lib/sass/tree/visitors/base.rb:36:in `block in visit'
+/usr/local/lib/ruby/gems/2.1.0/gems/sass-3.4.4/lib/sass/tree/visitors/perform.rb:186:in `visit_root'
+/usr/local/lib/ruby/gems/2.1.0/gems/sass-3.4.4/lib/sass/tree/visitors/base.rb:36:in `visit'
+/usr/local/lib/ruby/gems/2.1.0/gems/sass-3.4.4/lib/sass/tree/visitors/perform.rb:157:in `visit'
+/usr/local/lib/ruby/gems/2.1.0/gems/sass-3.4.4/lib/sass/tree/visitors/perform.rb:8:in `visit'
+/usr/local/lib/ruby/gems/2.1.0/gems/sass-3.4.4/lib/sass/tree/root_node.rb:36:in `css_tree'
+/usr/local/lib/ruby/gems/2.1.0/gems/sass-3.4.4/lib/sass/tree/root_node.rb:29:in `render_with_sourcemap'
+/usr/local/lib/ruby/gems/2.1.0/gems/sass-3.4.4/lib/sass/engine.rb:368:in `_render_with_sourcemap'
+/usr/local/lib/ruby/gems/2.1.0/gems/sass-3.4.4/lib/sass/engine.rb:285:in `render_with_sourcemap'
+/usr/local/lib/ruby/gems/2.1.0/gems/sass-3.4.4/lib/sass/plugin/compiler.rb:489:in `update_stylesheet'
+/usr/local/lib/ruby/gems/2.1.0/gems/sass-3.4.4/lib/sass/plugin/compiler.rb:215:in `block in update_stylesheets'
+/usr/local/lib/ruby/gems/2.1.0/gems/sass-3.4.4/lib/sass/plugin/compiler.rb:209:in `each'
+/usr/local/lib/ruby/gems/2.1.0/gems/sass-3.4.4/lib/sass/plugin/compiler.rb:209:in `update_stylesheets'
+/usr/local/lib/ruby/gems/2.1.0/gems/sass-3.4.4/lib/sass/plugin.rb:82:in `update_stylesheets'
+/usr/local/lib/ruby/gems/2.1.0/gems/sass-3.4.4/lib/sass/exec/sass_scss.rb:329:in `watch_or_update'
+/usr/local/lib/ruby/gems/2.1.0/gems/sass-3.4.4/lib/sass/exec/sass_scss.rb:50:in `process_result'
+/usr/local/lib/ruby/gems/2.1.0/gems/sass-3.4.4/lib/sass/exec/base.rb:40:in `parse'
+/usr/local/lib/ruby/gems/2.1.0/gems/sass-3.4.4/lib/sass/exec/base.rb:19:in `parse!'
+/usr/local/lib/ruby/gems/2.1.0/gems/sass-3.4.4/bin/scss:13:in `<top (required)>'
+/usr/local/bin/scss:23:in `load'
+/usr/local/bin/scss:23:in `<main>'
+*/
+body:before {
+  white-space: pre;
+  font-family: monospace;
+  content: "Error: File to import not found or unreadable: foundation.\A        Load paths:\A          \A         on line 2 of app.scss\A \A 1: @import \"settings\";\A 2: @import \"foundation\";\A 3: \A 4: // Or selectively include components\A 5: // @import\A 6: //   \"foundation/components/accordion\",\A 7: //   \"foundation/components/alert-boxes\","; }
