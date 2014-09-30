@@ -51,7 +51,7 @@ var mainRouter = express.Router();
  * Main Router
  */
 mainRouter.get("/", mainController.getHome);
-mainRouter.post("/", mainController.chargeUser);
+mainRouter.post("/charge", mainController.chargeUser);
 
 app.use("/", mainRouter);
 

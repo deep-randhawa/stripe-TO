@@ -7,13 +7,23 @@ exports.getHome = function (req, res) {
   });
 };
 
-exports.chargeUser = function(req, res) {
+exports.chargeUser = function (req, res) {
   var requestBody = req.body;
-  if (requestBody.hasOwnProperty('stripeToken') && requestBody.hasOwnProperty('stripeEmail')) {
-    res.send(200);
-  } else {
-    res.send(400);
-  }
+
+  var stripe = require("stripe")("sk_test_mUlQsWOLmsgiqikwNdT7aCnc");
+  var cardToken = req.body.stripeToken;
+  var cardEmail = req.body.stripeEmail;
+  stripe.charges.create({
+    amount: 2000,
+    currency: "usd",
+    card: cardToken, // obtained with Stripe.js
+    description: "Charge for " + cardEmail
+  }, function (err, charge) {
+    // asynchronously called
+    console.log(charge);
+  });
+  res.send(200);
+
 };
 
 
